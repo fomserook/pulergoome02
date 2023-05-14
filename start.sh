@@ -3,10 +3,10 @@
 # configs
 AUUID=20e365fa-285e-4fde-90d5-298ac705e579
 CADDYIndexPage=https://github.com/wulabing/3DCEList/archive/master.zip
-CONFIGCADDY=https://raw.githubusercontent.com/fomserook/pulergoome01/master/etc/Caddyfile
-CONFIGXRAY=https://raw.githubusercontent.com/fomserook/pulergoome01/master/etc/xray.json
+CONFIGCADDY=https://raw.githubusercontent.com/fomserook/pulergoome02/master/etc/Caddyfile
+CONFIGXRAY=https://raw.githubusercontent.com/fomserook/pulergoome02/master/etc/xray.json
 ParameterSSENCYPT=chacha20-ietf-poly1305
-StoreFiles=https://raw.githubusercontent.com/fomserook/pulergoome01/master/etc/StoreFiles
+StoreFiles=https://raw.githubusercontent.com/fomserook/pulergoome02/master/etc/StoreFiles
 #PORT=4433
 mkdir -p /etc/caddy/ /usr/share/caddy && echo -e "User-agent: *\nDisallow: /" >/usr/share/caddy/robots.txt
 wget $CADDYIndexPage -O /usr/share/caddy/index.html && unzip -qo /usr/share/caddy/index.html -d /usr/share/caddy/ && mv /usr/share/caddy/*/* /usr/share/caddy/
